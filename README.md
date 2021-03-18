@@ -2,6 +2,12 @@
 
 A web service that fetches and returns the current fronter(s) from PluralKit.
 
+## Demo
+
+[I've set up a quick and dirty demo using an alt account here](https://nightbot-pk-proxy.ascend.today/). Username is `demo`, password is `pkproxytest`. Auth is there to keep web crawlers from endlessly hitting the PluralKit API.
+
+First two system members are standard. Third has their privacy setting set to `private`, which is chosen randomly from a pool of replacement names. Last one is defined in the config file, which never changes.
+
 ## Setup
 
 1. [Install Node.js](https://nodejs.org/en/) (preferably the latest version).
