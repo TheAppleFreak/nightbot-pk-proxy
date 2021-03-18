@@ -12,9 +12,9 @@ A web service that fetches and returns the current fronter(s) from PluralKit.
 5. Build the application using `npm run build`, then launch the application by running `npm start`. Alternatively, if you don't feel comfortable with the command line or terminal, double click `start.bat` to run the commands for you.
 6. In Nightbot, create a new command with the following text. 
   
-      $(urlfetch <your.website.here>)
+        $(urlfetch <your.website.here>)
   
-  Other bots should also work with this, but this application was built for Nightbot. Out of respect for the PluralKit API, make sure that you have reasonable limits on how often users can call this application, as it calls the PluralKit API on every hit. This will be improved in the future.
+    Other bots should also work with this, but this application was built for Nightbot. Out of respect for the PluralKit API, make sure that you have reasonable limits on how often users can call this application, as it calls the PluralKit API on every hit. This will be improved in the future.
 
 ## Proxy
 
