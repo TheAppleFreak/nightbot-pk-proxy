@@ -24,7 +24,7 @@ First two system members are standard. Third has their privacy setting set to `p
 
 ## Proxy
 
-Due to the requirements of the person I wrote this application for, there is a built-in SSH-based reverse proxy solution that will forward a port from a remote server to the local application. This can be useful if you'd like to run the application on local hardware while using an external server to expose it to the internet, such as a cheap cloud VPS. I personally use a $5/mo DigitalOcean VPS and a cheap domain from Namecheap for this purpose. If you want $100 in DigitalOcean credit for 100 days, [feel free to sign up using my referral link](https://m.do.co/c/5c880460536c).
+Due to the requirements of the person I wrote this application for, there is a built-in SSH-based reverse proxy solution that will forward a port from a remote server to the local application. This can be useful if you'd like to run the application on local hardware while using an external server to expose it to the internet, such as a cheap cloud VPS. I personally use a $5/mo DigitalOcean VPS and a cheap domain from Namecheap for this purpose. If you want $100 in DigitalOcean credit for 60 days, [feel free to sign up using my referral link](https://m.do.co/c/5c880460536c).
 
 This is easily disabled if you'd rather run the application as a standalone web server. Simply set `USE_PROXY` in the environment variables to `false` to disable that feature.
 
