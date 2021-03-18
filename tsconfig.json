@@ -1,0 +1,25 @@
+{
+	"compilerOptions": {
+		"module": "commonjs",
+		"declaration": false,
+		"noImplicitAny": false,
+		"noLib": false,
+		"target": "es2020",
+		"moduleResolution": "node",
+		"importHelpers": true,
+		"inlineSourceMap": false,
+		"pretty": true,
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"resolveJsonModule": true,
+		"outDir": "./build",
+		"rootDir": "./src",
+		"baseUrl": "./src"
+	},
+	"include": [
+		"src/**/*.ts"
+	],
+	"exclude": [
+		"node_modules/**"
+	]
+}

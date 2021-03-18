@@ -1,0 +1,49 @@
+{
+  "name": "nightbot-pk-proxy",
+  "version": "1.0.0",
+  "description": "Updates a Nightbot command to show the current fronter as registered in PluralKit.",
+  "main": "build/main.js",
+  "scripts": {
+    "build": "tsc -P tsconfig.json",
+    "build:watch": "tsc -P tsconfig.json --watch",
+    "clean": "rimraf build",
+    "start": "node .",
+    "start:dev": "npm run clean && concurrently \"npm run build:watch\" \"npm run start:watch\"",
+    "start:watch": "nodemon build/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheAppleFreak/nightbot-pk-proxy.git"
+  },
+  "author": "TheAppleFreak <TheAppleFreak@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TheAppleFreak/nightbot-pk-proxy/issues"
+  },
+  "homepage": "https://github.com/TheAppleFreak/nightbot-pk-proxy#readme",
+  "devDependencies": {
+    "@types/dotenv-defaults": "^2.0.0",
+    "@types/koa": "^2.13.1",
+    "@types/koa-bodyparser": "^4.3.0",
+    "@types/node": "^14.14.35",
+    "@types/qs": "^6.9.6",
+    "@types/ssh2": "^0.5.46",
+    "concurrently": "^6.0.0",
+    "nodemon": "^2.0.7",
+    "rimraf": "^3.0.2",
+    "tslib": "^2.1.0",
+    "typescript": "^4.2.3"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "dayjs": "^1.10.4",
+    "dotenv": "^8.2.0",
+    "env-var": "^7.0.0",
+    "flatted": "^3.1.1",
+    "koa": "^2.13.1",
+    "koa-bodyparser": "^4.3.0",
+    "qs": "^6.9.6",
+    "ssh2": "^0.5.2",
+    "winston": "^3.3.3"
+  }
+}
