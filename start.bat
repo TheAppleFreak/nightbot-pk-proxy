@@ -12,7 +12,7 @@ where node -v >nul 2>&1 && (
         echo Starting server! To exit, press Ctrl-C
         npm start
     ) else (
-        echo You don't have a configuration file! Please rename .env to .env.sample, then fill out each line with your configuration. Run this again once you've done that.
+        echo You don't have a configuration file! Please rename .env.sample to .env, then fill out each line with your configuration. Run this again once you've done that.
         pause
     )
 ) || (
