@@ -11,7 +11,7 @@ import logger from "./logger";
 import config from "./config";
 
 const axios = Axios.create({
-    baseURL: "https://api.pluralkit.me/v1",
+    baseURL: "https://api.pluralkit.me/v2",
     headers: {
         common: {
             Authorization: config.pk.token
@@ -24,7 +24,7 @@ app.use(bodyParser());
 
 app.use(async (ctx, next) => {
     try {
-        const pkResponse = await axios.get(`/s/${config.pk.systemId}/fronters`);
+        const pkResponse = await axios.get(`/systems/${config.pk.systemId}/fronters`);
         const members = pkResponse.data.members;
         
         if (ctx.headers["nightbot-user"]) {
@@ -149,7 +149,7 @@ getPKSystemInfo().then(() => {
 
 async function getPKSystemInfo(): Promise<void> {
     try {
-        const response = await axios.get(`/s${config.pk.systemId !== "" ? "/" + config.pk.systemId : ""}`);
+        const response = await axios.get(`/systems/${config.pk.systemId !== "" ? "/" + config.pk.systemId : ""}`);
     
         if (!config.pk.systemName) {
             config.pk.systemName = response.data.name;
