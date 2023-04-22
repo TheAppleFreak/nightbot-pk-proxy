@@ -149,7 +149,7 @@ getPKSystemInfo().then(() => {
 
 async function getPKSystemInfo(): Promise<void> {
     try {
-        const response = await axios.get(`/systems/${config.pk.systemId !== "" ? "/" + config.pk.systemId : ""}`);
+        const response = await axios.get(`/systems${config.pk.systemId !== "" ? "/" + config.pk.systemId : ""}`);
     
         if (!config.pk.systemName) {
             config.pk.systemName = response.data.name;
